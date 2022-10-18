@@ -1,7 +1,7 @@
 const FactoryFunction = string=> {
     const capitalizeString = () => string.toUpperCase();
     const printString = ()=> console.log(`---${capitalizeString()}---`);
-    return { printString };
+    return { printString , capitalizeString};
 }
 
 const taco = FactoryFunction('taco');
@@ -9,7 +9,7 @@ const taco = FactoryFunction('taco');
 //printString();// ERROR!!
 
 // capitalizeString();// ERROR!!
-// taco.capilalizeString();// ERROR!!
+ taco.capitalizeString();// ERROR!!
 taco.printString();
 
 
@@ -22,3 +22,21 @@ const FactoryFunction2 = integer=> {
 const double = FactoryFunction2(4);
 
 double.printInteger();
+ // counter creator 
+
+ const counterCreator = () => {
+    let count = 0;
+    return () => {
+        console.log(count);
+        count ++;
+    };
+ };
+ const counter = counterCreator();
+ counter();
+ counter();
+ counter();
+ counter();
+ counter();
+ counter();
+
+
