@@ -6,10 +6,10 @@ const FactoryFunction = string=> {
 
 const taco = FactoryFunction('taco');
 
-//printString();
+//printString();// ERROR!!
 
-// capitalizeString();
-// taco.capilalizeString();
+// capitalizeString();// ERROR!!
+// taco.capilalizeString();// ERROR!!
 taco.printString();
 
 
