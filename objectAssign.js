@@ -85,3 +85,5 @@ const o31 = { c: 3 };
 
 const obj11 = Object.assign({}, o11, o21, o31);
 console.log(obj11); // { a: 1, b: 2, c: 3 }
+
+
