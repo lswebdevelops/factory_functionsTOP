@@ -45,4 +45,11 @@ var foo = "foo";
     console.log(innerFoo);
 })(foo);
 
+// use strict
+(function() {
+    'use strict';
+    console.log("test");
+    // All function and variables are scoped to this function
+  })();
+
 
