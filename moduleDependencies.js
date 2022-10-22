@@ -24,6 +24,6 @@ const Formatter = (function() {
   })();
   
   Formatter.writeToDOM(".target", "Hi there");
-  Formatter.writeToDOM(".target2", Formatter.makeLowerCase("small case"));
+  Formatter.writeToDOM(".target2", Formatter.makeLowerCase("TO SMALL CASE"));
 
 
